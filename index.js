@@ -31,3 +31,13 @@ document.getElementById("name").addEventListener('keyup', function (event) {
         loadCh();
     }
 });
+
+const queryString = window.location.search;
+console.log(queryString.substring(1));
+
+if(queryString && queryString.substring(1)) {
+    document.getElementById("name").value = queryString.substring(1);
+    setTimeout(() => {
+        loadCh();
+    }, 500);
+}
