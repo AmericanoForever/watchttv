@@ -16,7 +16,7 @@ function loadCh() {
     const name = document.getElementById("name").value;
     new Twitch.Embed("twitch-embed", {
         width: "100%",
-        height: "100%",
+        height: "95%",//because 100 scrolls.
         channel: name,
         parent: ["americanoforever.github.io"]
     });
